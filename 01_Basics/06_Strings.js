@@ -67,3 +67,20 @@ let fullName = firstName + " " + lastName; // Concatenation
 let originalString = "Hello";
 let modifiedString = originalString + ", World!";
 // These are some of the fundamental aspects of working with strings in JavaScript, including modern syntax and string interpolation. Understanding these concepts will help you effectively handle text data in your JavaScript applications.
+
+let myName = new String ("GauravAtHisBest")
+let my = new String ("Home String")
+let nane = "GauravAtHisBest"
+// console.log(myName.__proto__);
+console.log(myName);
+console.log(myName.toUpperCase());
+console.log(myName.toLocaleUpperCase('fr-FR'));
+console.log(myName.toLocaleUpperCase('TR'));
+console.log(my.trim());
+console.log(my.trimStart());
+console.log(my.trimEnd());
+console.log(myName.valueOf());
+console.log(my.valueOf());
+let myLink = "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started"
+console.log(myLink.replace("mozilla" , "habibi"));
+console.log(myName.split("-"));
