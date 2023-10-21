@@ -156,3 +156,13 @@ console.log(userDetails.name);
 console.log(userDetails["email"]);
 console.log(`User name :- ${userDetails.name} ${userPaymentDetails.fullname}`);
 console.log(userPaymentDetails.mySym);
+
+let me = new Object();
+me = {
+  age: 24,
+  name: "ABC",
+  data: "4-3-2000",
+};
+
+me.isuserAdmin = true;
+console.log(me);
