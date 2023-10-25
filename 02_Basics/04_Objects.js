@@ -48,10 +48,10 @@
 // console.log(complete_details.toLocaleString("fr-FR"));
 // console.log("Obj3 => ", obj3);
 
-const number = 12345.6789;
-const options = { style: "currency", currency: "RUB" };
-const localizedNumber = number.toLocaleString("en-IN", options);
-console.log(localizedNumber);
+// const number = 12345.6789;
+// const options = { style: "currency", currency: "RUB" };
+// const localizedNumber = number.toLocaleString("en-IN", options);
+// console.log(localizedNumber);
 
 // function myApp(name, age) {
 //   return {
@@ -64,3 +64,19 @@ console.log(localizedNumber);
 // }
 // const player = myApp("Virat Kohli", 50);
 // console.log(player);
+
+// Destructuring of Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  address: {
+    streetAddress: "123 Main St.",
+    city: "Anytown",
+    state: "CA",
+    country: "USA",
+    postalCode: "12345",
+  },
+};
+
+const { firstName: one, lastName: two, address: three } = person;
+console.log(one, two, three);
