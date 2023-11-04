@@ -61,6 +61,7 @@ IIFE is a useful tool for maintaining code organization and preventing unintende
 (function chai() {
   //->>>> This is a named IIFE as this function has a name i.e chai()
   console.log(`DB Connected!!`);
+  // console.log(this);
 })();
 
 ((name) => {
