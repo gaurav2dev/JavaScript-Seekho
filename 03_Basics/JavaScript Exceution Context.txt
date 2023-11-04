@@ -1,0 +1,83 @@
+JavaScript execution context is a fundamental concept in the language that defines the environment in which JavaScript code is executed. Understanding execution contexts is crucial for understanding how variables, functions, and scope work in JavaScript. There are three main types of execution contexts in JavaScript: the global execution context, function execution contexts, and the `eval` function execution context. Let's explore each of them in detail:
+
+1. Global Execution Context:
+   - The global execution context is the outermost and most fundamental context in JavaScript. It represents the environment in which the entire JavaScript program runs.
+   - When you open a web page or run a JavaScript file, a global execution context is created, which consists of two main components:
+     a. The global object: In a browser environment, the global object is the `window` object. In a Node.js environment, it's the `global` object. This object contains properties and functions that are accessible globally.
+     b. The global scope: This is where global variables and functions are defined. Variables declared outside of any function are placed in the global scope.
+
+2. Function Execution Contexts:
+   - Function execution contexts are created whenever a JavaScript function is invoked (called). Each function call has its own execution context, which is separate from the global context.
+   - When a function is called, a new execution context is created, and it has its own components:
+     a. The function scope: This is where function-specific variables and parameters are defined. It is a local scope that can access variables in the parent context (usually the global context).
+     b. The `this` keyword: It refers to the context in which a function is executed. Its value is determined by how the function is called, and it can vary.
+     c. The arguments object: This object contains the values of the arguments passed to a function.
+
+3. `eval` Function Execution Context:
+   - The `eval` function allows you to execute code dynamically, but it also creates its own execution context.
+   - When code is evaluated using `eval`, a new execution context is established for that code, and it can access variables and functions from its parent context.
+
+Execution Stack (Call Stack):
+- JavaScript uses an execution stack, often referred to as the "call stack," to keep track of active execution contexts. When a function is called, a new execution context is pushed onto the stack. When the function execution is completed, the context is popped from the stack.
+- The call stack follows the Last-In, First-Out (LIFO) principle. The most recently invoked function is the first to be completed and removed from the stack.
+
+Lexical Environment:
+- Each execution context has an associated lexical environment, which defines the scope and variables accessible within that context.
+- The lexical environment consists of two parts: the Variable Environment and the Lexical Environment Record.
+  a. Variable Environment: This part contains function and variable declarations and is where variable names are bound to values.
+  b. Lexical Environment Record: This part maintains the state of local variables and the reference to the outer (parent) lexical environment.
+
+In summary, JavaScript execution contexts define the environments in which code is executed, and they play a critical role in managing scope, variable access, and function execution. Understanding how these contexts work is essential for writing robust and bug-free JavaScript code.
+
+Some Tips and Tricks
+
+Certainly! Here are some tips and tricks related to JavaScript execution contexts along with some interview questions and sample answers:
+
+**Tips and Tricks:**
+
+1. **Understand the Global Context:**
+   - Familiarize yourself with the global context, which is the top-level context where your JavaScript code starts running.
+   - Know that variables declared without the `var`, `let`, or `const` keywords in the global context become global variables attached to the global object (e.g., `window` in a browser).
+
+2. **Function Contexts and Scope:**
+   - Understand the concept of local and global scope.
+   - Be aware of variable hoisting in JavaScript and how it affects variable declarations within functions.
+
+3. **The `this` Keyword:**
+   - Learn how the value of the `this` keyword is determined in different situations (e.g., in global context, function context, within object methods).
+   - Practice using `bind()`, `call()`, and `apply()` methods to control the value of `this`.
+
+4. **Lexical Scoping:**
+   - Be familiar with lexical scoping, which means that the scope of a variable is determined by where it's written in the code.
+   - Understand how closures work and their impact on variable access in nested functions.
+
+5. **Execution Stack and Call Stack:**
+   - Know the mechanics of the execution stack (call stack) and how it manages function execution contexts.
+   - Be prepared to explain the Last-In, First-Out (LIFO) principle with respect to the call stack.
+
+**Interview Questions and Sample Answers:**
+
+1. **Question:** What is the global execution context in JavaScript, and what components does it consist of?
+
+   **Answer:** The global execution context is the outermost context where JavaScript code runs. It consists of the global object (e.g., `window` in a browser) and the global scope. The global scope is where global variables and functions are defined.
+
+2. **Question:** How is the value of the `this` keyword determined in JavaScript? Provide examples.
+
+   **Answer:** The value of `this` is determined by the context in which a function is executed. It can vary based on the situation. For example:
+   - In a global context, `this` refers to the global object.
+   - In an object method, `this` refers to the object the method is called on.
+   - When using `bind()`, `call()`, or `apply()`, you can explicitly set the value of `this`.
+
+3. **Question:** Explain the concept of variable hoisting in JavaScript.
+
+   **Answer:** Variable hoisting is a JavaScript behavior where variable declarations are moved to the top of their containing function or global context during the compilation phase. However, the assignments remain in place. This can lead to unexpected behavior if you're not aware of it.
+
+4. **Question:** What is lexical scoping, and how does it affect variable access in JavaScript?
+
+   **Answer:** Lexical scoping is a scoping mechanism where the scope of a variable is determined by its location in the source code. In JavaScript, variables are looked up in their containing functions or, if not found, in outer functions until the global scope. This allows for the creation of closures, which capture variables from their containing scope even after the outer function has finished executing.
+
+5. **Question:** How does the call stack (execution stack) work in JavaScript, and what is the Last-In, First-Out (LIFO) principle?
+
+   **Answer:** The call stack is a data structure that manages the execution contexts of functions in JavaScript. When a function is called, a new execution context is pushed onto the stack. When the function completes, its context is popped from the stack. The LIFO principle means that the most recently called function is the first to be completed and removed from the stack.
+
+These tips, along with the interview questions and answers, should help you prepare for discussions about JavaScript execution contexts during interviews and deepen your understanding of this crucial concept in JavaScript development.
