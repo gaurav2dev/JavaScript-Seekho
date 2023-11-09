@@ -49,9 +49,9 @@ let userTwo = userOne;
 
 // console.log(userTwo);
 
-userOne.email = "zdj@gmail.com";
+userTwo.email = "zdj@gmail.com";
 console.log(userOne);
-console.log(userTwo);
+// console.log(userTwo);
 
 // Data Types
 /* 

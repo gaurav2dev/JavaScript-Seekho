@@ -1,5 +1,8 @@
 /* 
-In JavaScript, the "this" keyword is a special identifier that refers to the current object, or more precisely, the object on which a method or function is currently being called. The value of "this" is determined by how a function is called, and it can vary in different contexts. Understanding the value of "this" is crucial for working with object-oriented code and event handling in JavaScript.
+In JavaScript, the "this" keyword is a special identifier that refers to the current object, or more
+ precisely, the object on which a method or function is currently being called. 
+ The value of "this" is determined by how a function is called, and it can vary in different contexts.
+  Understanding the value of "this" is crucial for working with object-oriented code and event handling in JavaScript.
 
 The value of "this" can be different depending on how a function is called:
 
