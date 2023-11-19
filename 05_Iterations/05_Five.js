@@ -47,33 +47,33 @@ let myLang = ["Python", "JavaScript", "Java", "Swift", "Flutter"];
 
 // course.forEach(read);
 
-var arrayOfObjects = [
-  {
-    name: "John",
-    age: 25,
-    city: "New York",
-    courseEnrolled: "HTML",
-    duration: "10 weeks",
-    price: "$10",
-  },
-  {
-    name: "Alice",
-    age: 30,
-    city: "San Francisco",
-    courseEnrolled: "CSS",
-    duration: "10 weeks",
-    price: "$10",
-  },
-  {
-    name: "Bob",
-    age: 22,
-    city: "Los Angeles",
-    courseEnrolled: "JavaScript",
-    duration: "4 months",
-    price: "$30",
-  },
-];
+// var arrayOfObjects = [
+//   {
+//     name: "John",
+//     age: 25,
+//     city: "New York",
+//     courseEnrolled: "HTML",
+//     duration: "10 weeks",
+//     price: "$10",
+//   },
+//   {
+//     name: "Alice",
+//     age: 30,
+//     city: "San Francisco",
+//     courseEnrolled: "CSS",
+//     duration: "10 weeks",
+//     price: "$10",
+//   },
+//   {
+//     name: "Bob",
+//     age: 22,
+//     city: "Los Angeles",
+//     courseEnrolled: "JavaScript",
+//     duration: "4 months",
+//     price: "$30",
+//   },
+// ];
 
-arrayOfObjects.forEach((item) => {
-  console.table(item);
-});
+// arrayOfObjects.forEach((item) => {
+//   console.table(item);
+// });
