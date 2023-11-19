@@ -1,0 +1,91 @@
+| Loop Type             | Description                                                     | Example                                            | Applicable Data Structures                           |
+|-----------------------|-----------------------------------------------------------------|----------------------------------------------------|------------------------------------------------------|
+| `for` loop            | Basic loop with initialization, condition, and iteration.      | `for (let i = 0; i < array.length; i++) {}`         | Arrays, TypedArrays, Strings, numerical ranges        |
+| `for...in` loop       | Iterates over the enumerable properties of an object.           | `for (let key in object) {}`                        | Objects, Arrays                                      |
+| `for...of` loop       | Iterates over iterable objects like arrays, strings, etc.      | `for (let item of iterable) {}`                     | Arrays, Strings, Maps, Sets, TypedArrays, NodeList     |
+| `forEach` method      | Array method that executes a provided function once for each  | `array.forEach(callback)`                          | Arrays                                               |
+| `map` method          | Array method that creates a new array with the results of      | `array.map(callback)`                              | Arrays                                               |
+| `for...of` with `entries` | Iterates over the [key, value] pairs of an iterable.           | `for (let [index, value] of array.entries()) {}`    | Arrays                                            |
+| `for` loop (2D Array) | Nested loop for iterating through a 2D array.                 | ```javascript for (let i = 0; i < rows; i++) { for (let j = 0; j < cols; j++) {} }``` | 2D Arrays                                        |
+| `for...of` loop (2D Array) | Nested loop for iterating through a 2D array using `for...of`. | ```javascript for (let row of array) { for (let value of row) {} }```          | 2D Arrays                                        |
+| `for...in` loop (Map) | Iterates over keys of a Map.                                     | `for (let key in map) {}`                          | Maps                                                 |
+| `forEach` method (Map) | Executes a provided function once for each key-value pair in a Map. | `map.forEach((value, key) => {})`               | Maps                                                 |
+| `for...of` loop (Set) | Iterates over the values in a Set.                               | `for (let value of set) {}`                        | Sets                                                 |
+| `forEach` method (Set) | Executes a provided function once for each value in a Set.       | `set.forEach((value) => {})`                       | Sets                                                 |
+| `while` loop (List)   | Basic loop for iterating over elements in a linked list.         | `while (current !== null) {}`                      | Linked Lists                                         |
+| `do...while` loop (List) | Similar to `while` loop but ensures at least one iteration.      | `do {} while (current !== null)`                   | Linked Lists                                         |
+
+-----------------------------------------------Doc--------------------------------------------------------------------------
+Certainly! Here's the information presented in a more readable text format:
+
+### 1. `for` loop
+   - **Description**: Basic loop with initialization, condition, and iteration.
+   - **Example**: `for (let i = 0; i < array.length; i++) {}`
+   - **Applicable Data Structures**: Arrays, TypedArrays, Strings, numerical ranges
+
+### 2. `for...in` loop
+   - **Description**: Iterates over the enumerable properties of an object.
+   - **Example**: `for (let key in object) {}`
+   - **Applicable Data Structures**: Objects, Arrays
+
+### 3. `for...of` loop
+   - **Description**: Iterates over iterable objects like arrays, strings, etc.
+   - **Example**: `for (let item of iterable) {}`
+   - **Applicable Data Structures**: Arrays, Strings, Maps, Sets, TypedArrays, NodeList
+
+### 4. `forEach` method
+   - **Description**: Array method that executes a provided function once for each element.
+   - **Example**: `array.forEach(callback)`
+   - **Applicable Data Structures**: Arrays
+
+### 5. `map` method
+   - **Description**: Array method that creates a new array with the results of a provided function.
+   - **Example**: `array.map(callback)`
+   - **Applicable Data Structures**: Arrays
+
+### 6. `for...of` with `entries`
+   - **Description**: Iterates over the [key, value] pairs of an iterable.
+   - **Example**: `for (let [index, value] of array.entries()) {}`
+   - **Applicable Data Structures**: Arrays
+
+### 7. `for` loop (2D Array)
+   - **Description**: Nested loop for iterating through a 2D array.
+   - **Example**: `for (let i = 0; i < rows; i++) { for (let j = 0; j < cols; j++) {} }`
+   - **Applicable Data Structures**: 2D Arrays
+
+### 8. `for...of` loop (2D Array)
+   - **Description**: Nested loop for iterating through a 2D array using `for...of`.
+   - **Example**: `for (let row of array) { for (let value of row) {} }`
+   - **Applicable Data Structures**: 2D Arrays
+
+### 9. `for...in` loop (Map)
+   - **Description**: Iterates over keys of a Map.
+   - **Example**: `for (let key in map) {}`
+   - **Applicable Data Structures**: Maps
+
+### 10. `forEach` method (Map)
+   - **Description**: Executes a provided function once for each key-value pair in a Map.
+   - **Example**: `map.forEach((value, key) => {})`
+   - **Applicable Data Structures**: Maps
+
+### 11. `for...of` loop (Set)
+   - **Description**: Iterates over the values in a Set.
+   - **Example**: `for (let value of set) {}`
+   - **Applicable Data Structures**: Sets
+
+### 12. `forEach` method (Set)
+   - **Description**: Executes a provided function once for each value in a Set.
+   - **Example**: `set.forEach((value) => {})`
+   - **Applicable Data Structures**: Sets
+
+### 13. `while` loop (List)
+   - **Description**: Basic loop for iterating over elements in a linked list.
+   - **Example**: `while (current !== null) {}`
+   - **Applicable Data Structures**: Linked Lists
+
+### 14. `do...while` loop (List)
+   - **Description**: Similar to `while` loop but ensures at least one iteration.
+   - **Example**: `do {} while (current !== null)`
+   - **Applicable Data Structures**: Linked Lists
+
+This format provides a more narrative and descriptive presentation of the loop types and their usage with various data structures.
