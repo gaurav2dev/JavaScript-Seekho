@@ -86,3 +86,17 @@ form.addEventListener("submit", function (e) {
   }
 });
 ```
+## Project 3(Digital Clock) Solution
+
+``` javascript
+let clock = document.querySelector("#clock");
+let day = document.getElementById("day");
+
+setInterval(function () {
+  let date = new Date();
+  //   console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+  day.innerHTML = date;
+}, 1000);
+
+```
