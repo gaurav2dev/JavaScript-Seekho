@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval Example</title>
+</head>
+<body>
+
+<h1>Javascript</h1>
+<button style="padding: 10px" id="start">Start</button>
+<button style="padding: 10px" id="stop">Stop</button>
+<button style="padding: 10px" id="change">Change</button>
+<button style="padding: 10px" id="change_col">Col</button>
+
+<script>
+
+
+const change = document.querySelector("#change").addEventListener('click',change_me)
+const change_col = document.querySelector("#change_col").addEventListener('click',change_col_now)
+const start = document.querySelector('#start').addEventListener("click",start_inter)
+const stop = document.querySelector('#stop').addEventListener("click",stop_inter)
+
+function change_col_now() {
+    const body = document.querySelector("body")
+    body.style.backgroundColor = "Yellow"
+
+}
+
+function change_me(){
+    const h1 = document.querySelector('h1')
+    h1.innerHTML = "Hello"
+    h1.style.color ="Orange"
+}
+
+ let ID 
+
+ 
+function start_inter(){
+    console.log('started')
+     ID = setInterval(date,500)
+}
+
+function stop_inter(){
+    console.log("Stopped")
+    clearInterval(ID)
+}
+
+function date (){
+    const date = new Date()
+    console.log(date)
+}
+
+const say = function(){
+    console.log(`hello ${Date.now()}`)
+}
+
+// setTimeout(say,1800)
+// setInterval(say,1800)
+
+</script>
+
+</body>
+</html>
