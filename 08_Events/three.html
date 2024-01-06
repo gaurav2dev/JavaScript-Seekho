@@ -29,13 +29,13 @@ function change_col_now() {
 
 function change_me(){
     const h1 = document.querySelector('h1')
-    h1.innerHTML = "Hello"
-    h1.style.color ="Orange"
+    h1.innerHTML = "I am Iron Man"
+    h1.style.color ="Red"
 }
 
  let ID 
 
- 
+
 function start_inter(){
     console.log('started')
      ID = setInterval(date,500)
@@ -55,6 +55,7 @@ const say = function(){
     console.log(`hello ${Date.now()}`)
 }
 
+setTimeout(change_me,2000)
 // setTimeout(say,1800)
 // setInterval(say,1800)
 
