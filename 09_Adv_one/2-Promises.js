@@ -99,27 +99,77 @@
 
 // getAllUsers();
 
-// async function getAllUsers() {
-//   try {
-//     const response = await fetch(
-//       "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json"
-//     );
-//     const data = await response.json();
-//     console.log(data);
-//   } catch (error) {
-//     console.log(`Error: ${error}`);
-//   }
-// }
-
-// getAllUsers();
-
-fetch("https://jsonplaceholder.typicode.com/users")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
+async function getAllUsers() {
+  try {
+    const response = await fetch(
+      "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json"
+    );
+    const data = await response.json();
     console.log(data);
-  })
-  .catch(() => {
-    console.log(error);
-  });
+  } catch (error) {
+    console.log(`Error: ${error}`);
+  }
+}
+
+getAllUsers();
+
+// fetch("https://jsonplaceholder.typicode.com/users")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch(() => {
+//     console.log(error);
+//   });
+
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     console.log("Hello I am back");
+//     resolve();
+//   }, 1000);
+// });
+
+// promise.then(() => {
+//   console.log("I am consumed");
+// });
+
+// const promise_Two = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     let status = true;
+//     if (!status) {
+//       resolve([
+//         {
+//           name: "kidney beans",
+//           price: 0.58,
+//           image: "kidney.jpg",
+//           type: "vegetables",
+//         },
+//         {
+//           name: "garden peas",
+//           price: 0.52,
+//           image: "gardenpeas.jpg",
+//           type: "vegetables",
+//         },
+//       ]);
+//     } else {
+//       reject("Error has occured");
+//     }
+//   }, 2000);
+// });
+
+// promise_Two
+//   .then((users) => {
+//     console.log(users[1]); // Accessing the second object in the array
+//     return { name: users[1].name, price: users[1].price, type: users[1].type };
+//   })
+//   .then((name) => {
+//     console.log(name);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .finally(() => {
+//     console.log("This is finally block");
+//   });
